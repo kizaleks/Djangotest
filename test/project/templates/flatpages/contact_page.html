@@ -1,0 +1,18 @@
+<!--На странице изменен размер и цвет шрифта-->
+
+{% extends 'flatpages/default.html' %}
+
+{% block content %}
+    <h2>{{ flatpage.title }}</h2>
+    <hr>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Тег FONT</title>
+ </head>
+ <body>
+  <p><font size="6" color="red" face="Arial">{{ flatpage.content }}</font></p>
+ </body>
+</html>
+{% endblock content %}
+

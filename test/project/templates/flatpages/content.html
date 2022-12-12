@@ -1,0 +1,10 @@
+<!--На странице контент повторяется два раза-->
+<!--Страница доступна только зарегистрированному пользователю-->
+
+{% extends 'flatpages/default.html' %}
+{% block content %}
+    <h2>{{ flatpage.title }}</h2>
+    <hr>
+{{ flatpage.content }}
+{{ flatpage.content }}
+{% endblock content %}
